@@ -26,7 +26,7 @@ app.get("/", (request, response) => {
 })
 
 app.listen(port, ()=>{
-    console.log(`Server running on port ${port}`) 
+    console.log(`Server running on port ${port}`);
 })
 
 

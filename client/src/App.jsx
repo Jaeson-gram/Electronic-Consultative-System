@@ -29,7 +29,7 @@ function App() {
     <ChatContextProvider user={user}>
       <Container>
         <Routes>
-          <Route path="/" element={user ? <MessagesPage /> : <Login />} />
+          <Route path="/" element={<Profile/>} />
           <Route path="/register" element={user ? <MessagesPage /> : <Login />} />
           <Route path="/login" element={user ? <MessagesPage /> : <Login />} />
           <Route path="/messages" element={<MessagesPage />} />

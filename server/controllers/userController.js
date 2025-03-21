@@ -82,7 +82,7 @@ export const loginUser = async (request, response) =>{
     let user = await userModel.findOne({email}); //use await here - GPT
 
     if(!user){
-        return response.status(400).json({error: "Invalid credentials.."}); //return response immediately - GPT
+        return response.status(400).json({error: "user not found"}); //return response immediately - GPT
     }
 
     //verify password with bcrypt
